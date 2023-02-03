@@ -15,19 +15,35 @@
   cursor: pointer;
   font-family: 'Bubbly', sans-serif;
   font-size: xx-large;
+  transition: transform 500ms ease;
+  
+  
 }
 
+.routes:hover{
+  transform: scale(1.20);
+ 
+}
+
+
 .navBar {
+  padding: 1%;
+}
+
+.col{
   display: flex;
   flex-direction: row;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
-  padding-right: 5%;
 }
+
+
+
 
 .logos {
   height: 30px;
   width: 30px;
+  margin-left: 50%;
 }
 
 .switch {
@@ -120,13 +136,15 @@ input:checked + .slider:before {
   align-items: center;
   padding: 5%;
   padding-left: 20%;
-  margin-left: 10%;
+ 
+  
 }
 
 #myName {
   font-family: 'Bubbly', sans-serif;
   border-bottom: dotted;
   padding-right: 2%;
+  
 }
 
 #titleContainer {
@@ -163,7 +181,7 @@ input:checked + .slider:before {
 
 #summary {
   position: relative;
-  padding: 10%;
+  padding: 5%;
   font-size: xx-large;
   font-family: 'Bubbly', sans-serif;
   

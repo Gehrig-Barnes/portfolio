@@ -13,7 +13,7 @@ function Home() {
         <h1 className="name" id="title">
           Full Stack Developer
         </h1>
-        <div className="name" id="triangle-left"></div>
+        <div className="name" id="triangle-right"></div>
       </div>
       <div id="about-me">
         <img id="profile" src={profilePicture} />

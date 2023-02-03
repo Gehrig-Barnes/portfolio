@@ -14,22 +14,27 @@ function Nav({ setIsDark, isDark }) {
     setIsDark(e.target.checked)
   }
 
-   
+  // const onNavClick = ({ isActive }) => ({
+  //   transition: "background-color 0.3s ease",
+  //   color: isActive ? "#fff" : "#545e6f",
+  //   background: isActive ? "#7600dc" : "#fff",
+  // })
+  
 
   return (
-    <div className="navBar">
-      <Row>
-        <Col>
-          <h3 onClick={() => navigate("/")} className={isDark ? 'navText routes' : 'routes' }  >
+    <div >
+      <Row className="navBar">
+        <Col className="col">
+          <h3  onClick={() => navigate("/")} className={isDark ? 'navText routes' : 'routes' }  >
             Home
           </h3>
         </Col>
-        <Col>
+        <Col className="col">
           <h3 onClick={() => navigate("/projects")} className={isDark ? 'navText routes' : 'routes' }>
             Projects
           </h3>
         </Col>
-        <Col>
+        <Col className="col">
           <h3 onClick={() => navigate("/contact")} className={isDark ? 'navText routes' : 'routes' }>
             Resume
           </h3>
@@ -37,14 +42,14 @@ function Nav({ setIsDark, isDark }) {
 
         <Col>
           <a href="https://github.com/Gehrig-Barnes">
-            <img src={isDark ? githubDark : githubLight} className="routes logos" alt="githubLogo" />
+            <img src={isDark ? githubDark : githubLight} className=" logos" alt="githubLogo" />
           </a>
         </Col>
         <Col>
           <a href="https://www.linkedin.com/in/gehrig-barnes-64a78b163/">
             <img
               src={isDark ? linkedinLight : linkedinDark}
-              className="routes logos"
+              className=" logos"
               alt="githubLogo"
             />
           </a>

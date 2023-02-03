@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/bubbly-2');
 #darkMode {
   background-color: rgba(12, 11, 11, 0.932);
   min-height: 100vh;
@@ -12,8 +13,8 @@
 
 .routes {
   cursor: pointer;
-  font-family: Mono, monospace;
-  font-size: larger;
+  font-family: 'Bubbly', sans-serif;
+  font-size: xx-large;
 }
 
 .navBar {
@@ -117,12 +118,13 @@ input:checked + .slider:before {
   display: flex;
   position: relative;
   align-items: center;
-  padding: 7%;
+  padding: 5%;
   padding-left: 20%;
+  margin-left: 10%;
 }
 
 #myName {
-  font-family: Andale Mono, monospace;
+  font-family: 'Bubbly', sans-serif;
   border-bottom: dotted;
   padding-right: 2%;
 }
@@ -132,13 +134,14 @@ input:checked + .slider:before {
 }
 
 #title {
-  font-family: Andale Mono, monospace;
+  font-family: 'Bubbly', sans-serif;
   border-top: dotted;
   padding-left: 2%;
 }
 
 #profile {
   clip-path: polygon(50% 0%, 100% 50%, 50% 71%, 0% 50%);
+  
 }
 #about-me {
   display: flex;
@@ -146,17 +149,22 @@ input:checked + .slider:before {
   justify-content: left;
   align-items: center;
   margin-left: 5%;
-  padding-right: 50%;
-  padding-bottom: 0px;
 }
 
 #intro {
   position: sticky;
   margin-left: 10%;
-  padding-right: 70%;
-  padding-left: 20%;
-  background-color: rgb(131, 174, 131);
+
+  background-color: rgb(171, 205, 147);
   padding-top: 2%;
-  padding-bottom: 20%;
-  border:rgb(0, 0, 1);
+  
+  border: rgb(0, 0, 1);
+}
+
+#summary {
+  position: relative;
+  padding: 10%;
+  font-size: xx-large;
+  font-family: 'Bubbly', sans-serif;
+  
 }

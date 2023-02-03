@@ -18,8 +18,9 @@ function Home() {
       <div id="about-me">
         <img id="profile" src={profilePicture} />
         <div id="intro">
-            <h6>I like to craft solid and scalable fullstack products with great user
-          experience</h6>
+          <h6 id="summary">
+            Hello, I am a Software Developer out of Chicago, IL. I began my software engineering journey December 2021. I am proficient in Javascript, React, && Ruby on Rails  
+          </h6>
         </div>
       </div>
     </div>

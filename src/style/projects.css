@@ -1,0 +1,17 @@
+
+.projectContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+    position: relative;
+    display: inline;
+  }
+  
+  #project-image {
+    width: 200px;
+    height: 200px;
+  }

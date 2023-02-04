@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import projects from "../projectsData";
 import "../style/projects.css";
 import ProjectCard from "./ProjectCard";
+import '../App.css';
 
 function Project() {
   const projectCard = projects.map((project, index) => {

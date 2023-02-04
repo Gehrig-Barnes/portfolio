@@ -22,7 +22,7 @@ function Nav({ setIsDark, isDark }) {
   
 
   return (
-    <div >
+    <div className="navContainer">
       <Row className="navBar">
         <Col className="col">
           <h3  onClick={() => navigate("/")} className={isDark ? 'navText routes' : 'routes' }  >

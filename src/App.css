@@ -16,8 +16,6 @@
   font-family: 'Bubbly', sans-serif;
   font-size: xx-large;
   transition: transform 500ms ease;
-  
-  
 }
 
 .routes:hover{
@@ -184,5 +182,194 @@ input:checked + .slider:before {
   padding: 5%;
   font-size: xx-large;
   font-family: 'Bubbly', sans-serif;
+}
+
+
+
+
+
+
+
+/* mobile css */
+@media (max-width: 479px) {
+  #lightMode {
+  background-color: rgba(51, 74, 222, 0.834);
+  min-height: 100vh;
+  position: relative;
+  }
+
+  #darkMode {
+    background-color: rgba(12, 11, 11, 0.932);
+    min-height: 100vh;
+    position: relative;
+  }
+
+  .routes {
+    cursor: pointer;
+    font-family: 'Bubbly', sans-serif;
+    font-size: xx-large;
+    transition: transform 500ms ease;
+  }
+  .navBar {
+    padding: 0%;
+  }
+
+  .col{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logos {
+    height: 20px;
+    width: 20px;
+    margin-left: 10%;
+  }
   
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  .navText {
+    color: white;
+  }
+  
+  #triangle-left {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 50px solid rgba(51, 74, 222, 0.834);
+    border-bottom: 123px solid transparent;
+    margin-right: 2%;
+  }
+  
+  #triangle-right {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 123px solid transparent;
+    border-left: 50px solid rgba(51, 74, 222, 0.834);
+    border-bottom: 25px dotted transparent;
+    margin-left: 1%;
+  }
+  
+  #nameContainer {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 0%;
+    padding-left: 0%;
+    margin-right: 0%;
+    
+  }
+  
+  #myName {
+    font-family: 'Bubbly', sans-serif;
+    border-bottom: none;
+    padding-right: 0%;
+    
+  }
+  
+  #titleContainer {
+    justify-content: left;
+  }
+  
+  #title {
+    position: relative;
+    font-family: 'Bubbly', sans-serif;
+    border-top: none;
+    padding-left: 0%;
+    left: 11%;
+  }
+  
+  #profile {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 71%, 0% 50%);
+    width: 400px;
+    
+  }
+  #about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    margin-left: 0%;
+    
+  }
+  
+  #intro {
+    position: sticky;
+    margin-left: 10%;
+  
+    background-color: rgb(171, 205, 147);
+    padding-top: 2%;
+    
+    border: rgb(0, 0, 1);
+  }
+  
+  #summary {
+    position: relative;
+    padding: 5%;
+    font-size: xx-large;
+    font-family: 'Bubbly', sans-serif;
+  }
 }

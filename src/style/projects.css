@@ -1,13 +1,19 @@
 .projectContainer {
-  position: static;
-
-  background-color: green;
+  
+  
 }
 
 .card {
-  display: inline;
+ 
+  display: flex;
+  background-color: rgb(171, 205, 147) !important;
+  justify-content: center;
 
-  background-color: green !important;
+  height: 600px;
+  margin-top: 2%;
+  width: 90vw;
+  margin-top: 2%;
+  
 }
 
 #project-image {

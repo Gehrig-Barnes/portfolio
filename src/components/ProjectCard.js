@@ -11,12 +11,15 @@ export default function ProjectCard({ name, description, video, image }) {
       <Container>
         <Row>
           <Col>
-            <h2>{name}</h2>
             <img id="project-image" src={image} />
           </Col>
           <Col>
-            <p>{description}</p>
-            <a href={video}>Video Demo</a>
+            <div>
+              <h2>{name}</h2>
+              <p>{description}</p>
+
+              <a href={video}>Video Demo</a>
+            </div>
           </Col>
         </Row>
       </Container>

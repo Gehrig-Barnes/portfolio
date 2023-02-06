@@ -13,14 +13,12 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  
 
 }
 
 ::-webkit-scrollbar-corner {background-color: transparent;}
 
-.navContainer{
- 
-}
 
 .routes {
   cursor: pointer;

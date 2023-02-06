@@ -362,3 +362,15 @@ input:checked + .slider:before {
     font-family: "Bubbly", sans-serif;
   }
 }
+
+#lightMode > .resume{
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+}
+
+#darkMode > .resume{
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+}

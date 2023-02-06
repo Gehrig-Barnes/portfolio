@@ -1,8 +1,11 @@
 import React from "react";
+import pdf from '../resume/Barnes_Resume.png'
 
 function Resume(){
     return(
-        <div>Resume</div>
+        <div className= "resume">
+            <img src = {pdf} width="50%" height="80%"/>
+        </div>
     )
 };
 

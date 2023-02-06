@@ -14,7 +14,7 @@ export default function ProjectCard({ name, description, video, image }) {
             <img id="project-image" src={image} />
           </Col>
           <Col>
-            <div>
+            <div className = "cardDetail">
               <h2>{name}</h2>
               <p>{description}</p>
 

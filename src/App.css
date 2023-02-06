@@ -3,13 +3,23 @@
   background-color: rgba(12, 11, 11, 0.932);
   min-height: 100vh;
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 #lightMode {
   background-color: rgba(51, 74, 222, 0.834);
   min-height: 100vh;
   position: relative;
+  width: 100%;
+  overflow: hidden;
 
+}
+
+::-webkit-scrollbar-corner {background-color: transparent;}
+
+.navContainer{
+ 
 }
 
 .routes {

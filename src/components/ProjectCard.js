@@ -15,10 +15,9 @@ export default function ProjectCard({ name, description, video, image }) {
           </Col>
           <Col>
             <div className = "cardDetail">
-              <h2>{name}</h2>
-              <p>{description}</p>
-
-              <a href={video}>Video Demo</a>
+              <h2 className="cDetail">{name}</h2>
+              <p className="cDetail">{description}</p>
+              <a className="cDetail" href={video}>Video Demo</a>
             </div>
           </Col>
         </Row>

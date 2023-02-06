@@ -170,7 +170,7 @@ input:checked + .slider:before {
 #intro {
   position: sticky;
   margin-left: 10%;
-
+  position: sticky;
   background-color: rgb(171, 205, 147);
   padding-top: 2%;
 
@@ -178,7 +178,7 @@ input:checked + .slider:before {
 }
 
 #summary {
-  position: relative;
+  position: sticky;
   padding: 5%;
   font-size: xx-large;
   font-family: "Bubbly", sans-serif;

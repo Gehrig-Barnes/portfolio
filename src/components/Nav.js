@@ -34,11 +34,6 @@ function Nav({ setIsDark, isDark }) {
             Projects
           </h3>
         </Col>
-        <Col className="col">
-          <h3 onClick={() => navigate("/contact")} className={isDark ? 'navText routes' : 'routes' }>
-            Resume
-          </h3>
-        </Col>
 
         <Col>
           <a href="https://github.com/Gehrig-Barnes">

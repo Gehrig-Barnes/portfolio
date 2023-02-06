@@ -1,14 +1,16 @@
-
 .projectContainer {
-  
+  position: static;
+
+  background-color: green;
 }
 
 .card {
-    position: relative;
-    display: inline;
-  }
-  
-  #project-image {
-    width: 200px;
-    height: 200px;
-  }
+  display: inline;
+
+  background-color: green !important;
+}
+
+#project-image {
+  width: 500px;
+  height: 500px;
+}

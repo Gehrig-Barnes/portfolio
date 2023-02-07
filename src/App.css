@@ -33,6 +33,7 @@
     border: none;
     font-family: "Bubbly", sans-serif;
     font-size: xx-large;
+    padding: 2%;
   }
 }
 
@@ -46,7 +47,7 @@
   font-size: xx-large;
 }
 
-.about > h1 {
+.abt > h1 {
   margin-left: 40%;
 }
 
@@ -54,8 +55,8 @@
   background-color: transparent;
 }
 
-.about {
-  overflow: visible !important;
+.abt {
+  overflow: hidden !important;
 }
 
 .routes {

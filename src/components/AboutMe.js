@@ -7,6 +7,7 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import "../App.css";
+import "../style/about.css";
 
 function AboutMe() {
   const [currY, setCurrY] = useState(0);
@@ -19,61 +20,73 @@ function AboutMe() {
     setCurrY(window.scrollY);
   });
 
-
-
-
-
-  const toggleHide = currY > prev ?   <button className="hide" onClick={() => navigate("/")}> Back Home</button> : <button className="return-btn" onClick={() => navigate("/")}> Back Home</button>;
-
-
-  
+  const toggleHide =
+    currY > prev ? (
+      <>
+        {" "}
+        <button className="hide" onClick={() => navigate("/")}>
+          {" "}
+          Back Home
+        </button>{" "}
+      </>
+    ) : (
+      <>
+        <button className="return-btn" onClick={() => navigate("/")}>
+          {" "}
+          Back Home
+        </button>
+      </>
+    );
 
   return (
-    <div className=" about">
+    
+    <div className="abt">
       {toggleHide}
-      <h1>test</h1>
-      <h1>test</h1>
-      <h1>test</h1>
-      <h1>test</h1>
-      <h1>test</h1>
-      <h1>test</h1>
-      <h1>test</h1>
-      <h1>test</h1>
-      <h1>test</h1>
-      <h1>test</h1>
-      <h1>test</h1>
-      <h1>test</h1>
-      <h1>test</h1>
-      <h1>test</h1>
-      <h1>test</h1>
+      <div>
+        <h1>My Story</h1>
+        <p></p>
+      </div>
+
+      <div>
+        <h1>Experience</h1>
+      </div>
+
+      <div>
+        <h1>Education</h1>
+      </div>
+
+      <div>
+        <h1>Interest</h1>
+      </div>
+
       <div className="resume">
-        <Timeline position="left">
+        <Timeline align="left" position="left">
           <TimelineItem>
             <TimelineSeparator>
               <TimelineDot />
               <TimelineConnector />
             </TimelineSeparator>
-            <TimelineContent>Eat</TimelineContent>
+            <TimelineContent>My Story</TimelineContent>
           </TimelineItem>
           <TimelineItem>
             <TimelineSeparator>
               <TimelineDot />
               <TimelineConnector />
             </TimelineSeparator>
-            <TimelineContent>Code</TimelineContent>
+            <TimelineContent>Experience</TimelineContent>
           </TimelineItem>
           <TimelineItem>
             <TimelineSeparator>
               <TimelineDot />
               <TimelineConnector />
             </TimelineSeparator>
-            <TimelineContent>Sleep</TimelineContent>
+            <TimelineContent>Education</TimelineContent>
           </TimelineItem>
           <TimelineItem>
             <TimelineSeparator>
               <TimelineDot />
             </TimelineSeparator>
-            <TimelineContent>Repeat</TimelineContent>
+            <TimelineContent>Interest</TimelineContent>
           </TimelineItem>
         </Timeline>
       </div>

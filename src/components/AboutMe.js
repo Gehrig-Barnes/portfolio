@@ -72,16 +72,16 @@ function AboutMe() {
         Back Home
       </button>
 
-      <div>
+      <div id="me1"className="me">
         <h1>My Story</h1>
       </div>
-      <div>
+      <div className="me">
         <h1>Experience</h1>
       </div>
-      <div>
+      <div className="me">
         <h1>Education</h1>
       </div>
-      <div>
+      <div className="me">
         <h1>Interest</h1>
       </div>
 

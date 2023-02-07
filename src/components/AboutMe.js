@@ -22,8 +22,48 @@ function AboutMe() {
 
   const toggleHide = currY > prev ? "hide" : "return-btn";
 
+  const innerWidth = window.innerWidth
+  const timelineContainerStyle = {
+   
+  }
+
+  console.log(innerWidth)
+
   return (
     <div className="abt">
+      
+
+      <div style={timelineContainerStyle} className="timeLineContainer">
+        <Timeline align="left" position="left">
+          <TimelineItem>
+            <TimelineSeparator>
+              <TimelineDot />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>My Story</TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineSeparator>
+              <TimelineDot />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>Experience</TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineSeparator>
+              <TimelineDot />
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>Education</TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineSeparator>
+              <TimelineDot />
+            </TimelineSeparator>
+            <TimelineContent>Interest</TimelineContent>
+          </TimelineItem>
+        </Timeline>
+      </div>
       <button
         className={toggleHide}
         onClick={() => navigate("/")}
@@ -85,38 +125,6 @@ function AboutMe() {
       <h1>sperate</h1>
       <h1>sperate</h1>
       <h1>sperate</h1>
-
-      <div className="resume">
-        <Timeline align="left" position="left">
-          <TimelineItem>
-            <TimelineSeparator>
-              <TimelineDot />
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>My Story</TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineSeparator>
-              <TimelineDot />
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>Experience</TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineSeparator>
-              <TimelineDot />
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>Education</TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineSeparator>
-              <TimelineDot />
-            </TimelineSeparator>
-            <TimelineContent>Interest</TimelineContent>
-          </TimelineItem>
-        </Timeline>
-      </div>
     </div>
   );
 }

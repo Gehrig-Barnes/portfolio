@@ -12,6 +12,7 @@ import "../style/about.css";
 function AboutMe() {
   const [currY, setCurrY] = useState(0);
   const [prev, setPrev] = useState(0);
+  const [outlined, setOutline] = useState([true, false, false, false]);
 
   const navigate = useNavigate();
 
@@ -20,45 +21,66 @@ function AboutMe() {
     setCurrY(window.scrollY);
   });
 
+  function handleDotOne() {
+    setOutline([true, false, false, false]);
+  }
+  function handleDotTwo() {
+    setOutline([false, true, false, false]);
+  }
+  function handleDotThree() {
+    setOutline([false, false, true, false]);
+  }
+  function handleDotFour() {
+    setOutline([false, false, false, true]);
+  }
   const toggleHide = currY > prev ? "hide" : "return-btn";
 
-  const innerWidth = window.innerWidth
-  const timelineContainerStyle = {
-   
-  }
-
-  console.log(innerWidth)
+  const timelineContainerStyle = {};
 
   return (
     <div className="abt">
-      
-
       <div style={timelineContainerStyle} className="timeLineContainer">
         <Timeline className="timeLine" align="left" position="left">
           <TimelineItem>
-            <TimelineSeparator >
-              <TimelineDot className="separator"/>
-              <TimelineConnector className="connector"/>
+            <TimelineSeparator>
+              <TimelineDot
+                variant={outlined[0] ? "filled" : "outlined"}
+                className="separator"
+                onClick={handleDotOne}
+              />
+              <TimelineConnector className="connector" />
             </TimelineSeparator>
             <TimelineContent>My Story</TimelineContent>
           </TimelineItem>
           <TimelineItem>
             <TimelineSeparator>
-              <TimelineDot className="separator"/>
-              <TimelineConnector className="connector"/>
+              <TimelineDot
+                variant={outlined[1] ? "filled" : "outlined"}
+                className="separator"
+                onClick={handleDotTwo}
+              />
+              <TimelineConnector className="connector" />
             </TimelineSeparator>
             <TimelineContent>Experience</TimelineContent>
           </TimelineItem>
           <TimelineItem>
             <TimelineSeparator>
-              <TimelineDot className="separator"/>
-              <TimelineConnector className="connector"/>
+              <TimelineDot
+                variant={outlined[2] ? "filled" : "outlined"}
+                className="separator"
+                onClick={handleDotThree}
+              />
+              <TimelineConnector className="connector" />
             </TimelineSeparator>
             <TimelineContent>Education</TimelineContent>
           </TimelineItem>
           <TimelineItem>
             <TimelineSeparator>
-              <TimelineDot className="separator"/>
+              <TimelineDot
+                variant={outlined[3] ? "filled" : "outlined"}
+                className="separator"
+                onClick={handleDotFour}
+              />
             </TimelineSeparator>
             <TimelineContent>Interest</TimelineContent>
           </TimelineItem>
@@ -72,7 +94,7 @@ function AboutMe() {
         Back Home
       </button>
 
-      <div id="me1"className="me">
+      <div id="me1" className="me">
         <h1>My Story</h1>
       </div>
       <div className="me">

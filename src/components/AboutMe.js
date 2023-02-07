@@ -20,17 +20,30 @@ function AboutMe() {
     setCurrY(window.scrollY);
   });
 
-  const toggleHide =
-    currY > prev ? 'hide' : 'return-btn'
+  const toggleHide = currY > prev ? "hide" : "return-btn";
 
   return (
-    
     <div className="abt">
-      <button className={toggleHide} onClick={() => navigate("/")} disabled={currY > prev ? true : false}>
-      
-      Back Home
-    </button>
-      
+      <button
+        className={toggleHide}
+        onClick={() => navigate("/")}
+        disabled={currY > prev ? true : false}
+      >
+        Back Home
+      </button>
+
+      <div>
+        <h1>My Story</h1>
+      </div>
+      <div>
+        <h1>Experience</h1>
+      </div>
+      <div>
+        <h1>Education</h1>
+      </div>
+      <div>
+        <h1>Interest</h1>
+      </div>
 
       <h1>sperate</h1>
       <h1>sperate</h1>

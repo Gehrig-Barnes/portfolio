@@ -34,31 +34,31 @@ function AboutMe() {
       
 
       <div style={timelineContainerStyle} className="timeLineContainer">
-        <Timeline align="left" position="left">
+        <Timeline className="timeLine" align="left" position="left">
           <TimelineItem>
-            <TimelineSeparator>
-              <TimelineDot />
-              <TimelineConnector />
+            <TimelineSeparator >
+              <TimelineDot className="separator"/>
+              <TimelineConnector className="connector"/>
             </TimelineSeparator>
             <TimelineContent>My Story</TimelineContent>
           </TimelineItem>
           <TimelineItem>
             <TimelineSeparator>
-              <TimelineDot />
-              <TimelineConnector />
+              <TimelineDot className="separator"/>
+              <TimelineConnector className="connector"/>
             </TimelineSeparator>
             <TimelineContent>Experience</TimelineContent>
           </TimelineItem>
           <TimelineItem>
             <TimelineSeparator>
-              <TimelineDot />
-              <TimelineConnector />
+              <TimelineDot className="separator"/>
+              <TimelineConnector className="connector"/>
             </TimelineSeparator>
             <TimelineContent>Education</TimelineContent>
           </TimelineItem>
           <TimelineItem>
             <TimelineSeparator>
-              <TimelineDot />
+              <TimelineDot className="separator"/>
             </TimelineSeparator>
             <TimelineContent>Interest</TimelineContent>
           </TimelineItem>

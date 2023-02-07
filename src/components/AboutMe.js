@@ -19,24 +19,18 @@ function AboutMe() {
     setCurrY(window.scrollY);
   });
 
-  const hide = {
-    display: 'none',
-    opacity: 0,
-    transition: 'visibility 0s, opacity 0.5s linear'
-  }
 
-  const show = {
-    display: '',
-  
-  }
 
-  const toggleHide = currY > prev ? hide : show;
+
+
+  const toggleHide = currY > prev ?   <button className="hide" onClick={() => navigate("/")}> Back Home</button> : <button className="return-btn" onClick={() => navigate("/")}> Back Home</button>;
+
 
   
 
   return (
     <div className=" about">
-      <button style={toggleHide} id="return-btn" onClick={() => navigate("/")}> Back Home</button>
+      {toggleHide}
       <h1>test</h1>
       <h1>test</h1>
       <h1>test</h1>

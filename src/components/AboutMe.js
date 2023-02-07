@@ -9,21 +9,34 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import "../App.css";
 
 function AboutMe() {
-  const [showReturn, setShowReturn] = useState(0);
+  const [currY, setCurrY] = useState(0);
   const [prev, setPrev] = useState(0);
 
   const navigate = useNavigate();
 
   window.addEventListener("scroll", () => {
-    setPrev(showReturn);
-    setShowReturn(window.scrollY);
+    setPrev(currY);
+    setCurrY(window.scrollY);
   });
 
-  const renderReturnButton = showReturn > prev ? null : <button id="return-btn"onClick={() => navigate("/")}>Back Home</button>
+  const hide = {
+    display: 'none',
+    opacity: 0,
+    transition: 'visibility 0s, opacity 0.5s linear'
+  }
+
+  const show = {
+    display: '',
+  
+  }
+
+  const toggleHide = currY > prev ? hide : show;
+
+  
 
   return (
-    <div className="about">
-      {renderReturnButton}
+    <div className=" about">
+      <button style={toggleHide} id="return-btn" onClick={() => navigate("/")}> Back Home</button>
       <h1>test</h1>
       <h1>test</h1>
       <h1>test</h1>

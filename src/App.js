@@ -10,7 +10,8 @@ function App() {
   const [isDark, setIsDark] = useState(false)
   return (
     <div className="App" id={isDark ? 'darkMode' : 'lightMode'}>
-      <Nav setIsDark={setIsDark} isDark={isDark}/>
+     <Nav setIsDark={setIsDark} isDark={isDark}/>
+     
       <Routes>
         <Route exact path="/about_me" element={<AboutMe/>}/>
         <Route exact path="/projects" element={<Project/>}/>

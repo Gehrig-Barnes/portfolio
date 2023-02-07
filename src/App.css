@@ -13,12 +13,15 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  
-
 }
 
-::-webkit-scrollbar-corner {background-color: transparent;}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
 
+.about {
+  overflow: visible !important;
+}
 
 .routes {
   cursor: pointer;
@@ -363,19 +366,19 @@ input:checked + .slider:before {
   }
 }
 
-#lightMode > .resume{
-  display: flex;  
-  justify-content: center;  
-  align-items: center;  
+#lightMode > .resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#darkMode > .resume{
-  display: flex;  
-  justify-content: center;  
-  align-items: center;  
+#darkMode > .resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.aboutClick{
+.aboutClick {
   font-family: "Bubbly", sans-serif;
   margin-left: 5%;
   margin-bottom: 2%;
@@ -384,11 +387,8 @@ input:checked + .slider:before {
   border: none;
   transition: 0.3s;
   cursor: pointer;
- 
 }
 
 .aboutClick:hover {
- 
   color: #2196f3;
-  
 }

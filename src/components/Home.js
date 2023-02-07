@@ -1,8 +1,9 @@
 import React from "react";
 import profilePicture from "../images/self.png";
-
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const nav = useNavigate()
   return (
     <div className="homeContainer">
       <div id="nameContainer">
@@ -26,7 +27,7 @@ function Home() {
             Javascript, React, && Ruby on Rails
           </h6>
           
-          <button class="aboutClick">About Me</button>
+          <button onClick={()=> nav('/about_me')} class="aboutClick">About Me</button>
         </div>
       </div>
     </div>

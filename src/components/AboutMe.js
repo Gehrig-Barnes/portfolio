@@ -21,43 +21,57 @@ function AboutMe() {
   });
 
   const toggleHide =
-    currY > prev ? (
-      <>
-        {" "}
-        <button className="hide" onClick={() => navigate("/")}>
-          {" "}
-          Back Home
-        </button>{" "}
-      </>
-    ) : (
-      <>
-        <button className="return-btn" onClick={() => navigate("/")}>
-          {" "}
-          Back Home
-        </button>
-      </>
-    );
+    currY > prev ? 'hide' : 'return-btn'
 
   return (
     
     <div className="abt">
-      {toggleHide}
-      <div>
-        <h1>My Story</h1>
-        <p></p>
-      </div>
+      <button className={toggleHide} onClick={() => navigate("/")} disabled={currY > prev ? true : false}>
+      
+      Back Home
+    </button>
+      
 
-      <div>
-        <h1>Experience</h1>
-      </div>
-
-      <div>
-        <h1>Education</h1>
-      </div>
-
-      <div>
-        <h1>Interest</h1>
-      </div>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
+      <h1>sperate</h1>
 
       <div className="resume">
         <Timeline align="left" position="left">

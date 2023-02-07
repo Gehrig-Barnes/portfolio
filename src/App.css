@@ -15,6 +15,14 @@
   overflow: hidden;
 }
 
+#return-btn{
+  position: fixed;
+  background: transparent;
+  border: none;
+  font-family: "Bubbly", sans-serif;
+  font-size: xx-large;
+}
+
 ::-webkit-scrollbar-corner {
   background-color: transparent;
 }

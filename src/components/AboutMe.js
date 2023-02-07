@@ -19,9 +19,11 @@ function AboutMe() {
     setShowReturn(window.scrollY);
   });
 
+  const renderReturnButton = showReturn > prev ? null : <button id="return-btn"onClick={() => navigate("/")}>Back Home</button>
+
   return (
     <div className="about">
-      <button onClick={() => navigate("/")}>return</button>
+      {renderReturnButton}
       <h1>test</h1>
       <h1>test</h1>
       <h1>test</h1>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
@@ -37,9 +37,33 @@ function AboutMe() {
 
   const timelineContainerStyle = {};
 
-  console.log(window.location.href.innerWidth)
-
-  
+  useEffect(() => {
+    const sections = document.querySelectorAll(".me");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting === true) {
+            if (entry.target.id === "my_story") {
+              setOutline([true, false, false, false]);
+            } else if (entry.target.id === "experience") {
+              setOutline([false, true, false, false]);
+            } else if (entry.target.id === "education") {
+              setOutline([false, false, true, false]);
+            } else if (entry.target.id === "interest") {
+              setOutline([false, false, false, true]);
+            }
+          }
+        });
+      },
+      {
+        rootMargin: "-50% 0% 0% -50%",
+        threshold: 0.1,
+      }
+    );
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+  }, []);
 
   return (
     <div className="abt">
@@ -47,7 +71,7 @@ function AboutMe() {
         <Timeline className="timeLine" align="left" position="left">
           <TimelineItem>
             <TimelineSeparator>
-              <a href="#my_story">
+              <a href="#my_story" className="anchor">
                 <TimelineDot
                   variant={outlined[0] ? "filled" : "outlined"}
                   className="separator"
@@ -60,7 +84,7 @@ function AboutMe() {
           </TimelineItem>
           <TimelineItem>
             <TimelineSeparator>
-              <a href="#experience">
+              <a href="#experience" className="anchor">
                 <TimelineDot
                   variant={outlined[1] ? "filled" : "outlined"}
                   className="separator"
@@ -73,7 +97,7 @@ function AboutMe() {
           </TimelineItem>
           <TimelineItem>
             <TimelineSeparator>
-              <a href="#education">
+              <a href="#education" className="anchor">
                 <TimelineDot
                   variant={outlined[2] ? "filled" : "outlined"}
                   className="separator"
@@ -86,7 +110,7 @@ function AboutMe() {
           </TimelineItem>
           <TimelineItem>
             <TimelineSeparator>
-              <a href="#interest">
+              <a href="#interest" className="anchor">
                 <TimelineDot
                   variant={outlined[3] ? "filled" : "outlined"}
                   className="separator"
@@ -106,8 +130,8 @@ function AboutMe() {
         Back Home
       </button>
 
-      <div id="me1" className="me">
-        <h1 id="my_story">My Story</h1>
+      <div id="my_story" className="me">
+        <h1> My Story</h1>
         <p>
           TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
           TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
@@ -139,8 +163,8 @@ function AboutMe() {
           TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTEST
         </p>
       </div>
-      <div className="me">
-        <h1 id="experience">Experience</h1>
+      <div id="experience" className="me">
+        <h1>Experience</h1>
         <p>
           TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
           TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST

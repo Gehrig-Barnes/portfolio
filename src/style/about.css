@@ -17,8 +17,13 @@
 }
 
 .separator {
+    cursor: pointer;
 }
 
 .connector {
   height: 150px;
+}
+
+.me > p {
+    inline-size: 50%; 
 }

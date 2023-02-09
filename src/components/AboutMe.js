@@ -56,8 +56,8 @@ function AboutMe() {
         });
       },
       {
-        rootMargin: "-50% 0% 0% -50%",
-        threshold: 0.1,
+        rootMargin: "0% 0% 0% 10%",
+        threshold: 0.7,
       }
     );
     sections.forEach((section) => {

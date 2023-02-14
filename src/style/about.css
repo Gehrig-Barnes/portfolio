@@ -7,14 +7,19 @@
 }
 
 .me {
-  margin-bottom: 2%;
+  margin-bottom: 4%;
   margin-left: 30%;
+  inline-size: 30%
   
-  
+}
+
+.me >h1 {
+  border-bottom: solid 2px;
 }
 
 #my_story {
   margin-top: 5%;
+  
 }
 
 .separator {
@@ -26,7 +31,13 @@
 }
 
 .me > p {
-    inline-size: 50%; 
+    ; 
+}
+
+@media (max-width: 1100px) {
+  .timeLineContainer{
+    visibility: hidden;
+  }
 }
 
 /* .skill-box{

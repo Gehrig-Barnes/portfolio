@@ -9,8 +9,6 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import "../App.css";
 import "../style/about.css";
 
-
-
 function AboutMe() {
   const [currY, setCurrY] = useState(0);
   const [prev, setPrev] = useState(0);
@@ -66,7 +64,7 @@ function AboutMe() {
         });
       },
       {
-        rootMargin: "0% 0% 0% 10%",
+        rootMargin: "-10% 0% 0% 10%",
         threshold: 0.5,
       }
     );
@@ -90,7 +88,7 @@ function AboutMe() {
               </a>
               <TimelineConnector className="connector" />
             </TimelineSeparator>
-            <TimelineContent>My Story</TimelineContent>
+            <TimelineContent>About</TimelineContent>
           </TimelineItem>
           <TimelineItem>
             <TimelineSeparator>
@@ -128,7 +126,7 @@ function AboutMe() {
                 />
               </a>
             </TimelineSeparator>
-            <TimelineContent>Interest</TimelineContent>
+            <TimelineContent>Education</TimelineContent>
           </TimelineItem>
         </Timeline>
       </div>
@@ -141,80 +139,74 @@ function AboutMe() {
       </button>
 
       <div style={hidden} id="my_story" className="me">
-        <h1> My Story</h1>
+        <h1> About</h1>
+        
         <p>
-          TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTEST TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTEST
+          I am business school graduate and software engineer born on February
+          22, 1995. I recently pivoted into software engineering by attending
+          Flatiron School, a renowned coding bootcamp, in December 2021. Prior
+          to my career change, I had established a strong foundation in
+          business, including coursework in finance, marketing, and management.
+          I have a passion for solving complex problems through software
+          development, and I am excited about the opportunities that technology
+          can provide to individuals and businesses alike.
         </p>
         <p>
-          TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTEST TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTEST
+          In my free time, I enjoy staying active with hobbies such as chess and
+          rock climbing. I have been rock for two years and I enjoys the
+          physical and mental challenges that bouldering provides. I also enjoys
+          playing chess and find the strategic and analytical aspects of the
+          game to be a great mental exercise.
         </p>
-        <p>
-          TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTEST TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTEST
-        </p>
+        
       </div>
       <div style={hidden} id="experience" className="me">
         <h1>Experience</h1>
-        <p>
-          TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTEST TEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTEST TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTEST
-        </p>
-        <p>
-          TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTEST TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTEST
-        </p>
-        <p>
-          TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTEST TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTEST
-        </p>
-        <p>
-          TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTEST TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTEST
-        </p>
+        <h2>Flatiron School - New York, NY</h2>
+        <h3>Software Engineering Coach - 07/2022 - Present</h3>
+        <ul>
+          <li>
+            Adapted lessons to teach various topics and coding languages such as
+            JavaScript, React, and Ruby on Rails.{" "}
+          </li>
+          <li>
+            Cultivated an inclusive classroom environment by fostering
+            sensitivity and awareness of different cultural, racial, ethnic,
+            religious, and socioeconomic background.{" "}
+          </li>
+          <li>
+            Collaborated with team members to design interactive labs and lesson
+            plans for the Flatiron curriculum.{" "}
+          </li>
+        </ul>
+        <h2>Risk Strategies - Fort Washington, PA</h2>
+        <h3>Assistant Case Manager - 03/2021 - 10/2021</h3>
+        <ul>
+          <li>
+            Designed premium-calculating spreadsheets to support new business
+            proposals for prospective clients.{" "}
+          </li>
+          <li>
+            Managed database of key client information to support case
+            management workflow.{" "}
+          </li>
+          <li>
+            Reviewed client applications to ensure accuracy and completeness
+            before submitting to designated insurance carriers.{" "}
+          </li>
+        </ul>
+        <h2>firstPro - Fort Washington, PA</h2>
+        <h3>
+          Revenue Operations Specialist for health provider (contract) - 08/2020
+          - 01/2021
+        </h3>
+        <ul>
+          <li>
+            Submitted hundreds of insurance claims per day to insurers across
+            the country.{" "}
+          </li>
+          <li>Analyzed databases using Excel and VBA.</li>
+        </ul>
       </div>
       <div style={hidden} id="education" className="me">
         <h1>Skills</h1>
@@ -233,49 +225,33 @@ function AboutMe() {
         </div>
       </div>
       <div style={hidden} id="interest" className="me">
-        <h1>Interest</h1>
+        <h1>Education</h1>
+        <h2>Flatiron School - Chicago, IL</h2>
         <p>
-          TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTEST TEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTEST TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTEST
+          <strong>
+            Full Stack Web Development, Ruby on Rails and JavaScript program -
+            12/2021 - 04/2022
+          </strong>
+        </p>
+        <h2>Temple University - Philadelphia, PA</h2>
+        <p>
+          <strong>Degree:</strong> Bachelors of Business Administration -
+          08/2017 - 05/2020
         </p>
         <p>
-          TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTEST TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTEST
+          <strong>Major:</strong> Risk Management and Insurance
         </p>
-        <p>
-          TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTEST TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTEST
-        </p>
-        <p>
-          TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTEST TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTEST
-        </p>
+        <ul>
+          <li>
+            Gamma Iota Sigma Professional Risk Management, Insurance and
+            Actuarial Science Fraternity, Fall 2018 - Present
+          </li>
+          <li>Community Affairs Committee, Member, Fall 2018</li>
+          <li>
+            Temple University Presidential Academic Scholarship, Fall 2017
+          </li>
+        </ul>
       </div>
-      <div className="test">hello</div>
     </div>
   );
 }

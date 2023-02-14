@@ -64,8 +64,8 @@ function AboutMe() {
         });
       },
       {
-        rootMargin: "-10% 0% 0% 10%",
-        threshold: 0.5,
+        rootMargin: "-10% 10% 10% 10%",
+        threshold: .7,
       }
     );
     sections.forEach((section) => {
@@ -211,17 +211,17 @@ function AboutMe() {
       <div style={hidden} id="education" className="me">
         <h1>Skills</h1>
         <div className="skill-box">
-          <h5>JavaScript</h5>
-          <h5>CSS</h5>
-          <h5>HTML</h5>
-          <h5>React</h5>
-          <h5>Ruby</h5>
-          <h5>Ruby on Rails</h5>
-          <h5>Python</h5>
-          <h5>Flask</h5>
-          <h5>Postgres</h5>
-          <h5>MUI</h5>
-          <h5>Bootstrap</h5>
+          <h3> ▣ JavaScript</h3>
+          <h3> ▣ CSS</h3>
+          <h3> ▣ HTML</h3>
+          <h3> ▣ React</h3>
+          <h3> ▣ Ruby</h3>
+          <h3> ▣ Ruby on Rails</h3>
+          <h3> ▣ Python</h3>
+          <h3> ▣ Flask</h3>
+          <h3> ▣ Postgres</h3>
+          <h3> ▣ MUI</h3>
+          <h3> ▣ Bootstrap</h3>
         </div>
       </div>
       <div style={hidden} id="interest" className="me">

@@ -21,6 +21,8 @@ function AboutMe() {
     setCurrY(window.scrollY);
   });
 
+  const toggleHide = currY > prev ? "hide" : "return-btn";
+  
   function handleDotOne() {
     setOutline([true, false, false, false]);
   }
@@ -33,9 +35,14 @@ function AboutMe() {
   function handleDotFour() {
     setOutline([false, false, false, true]);
   }
-  const toggleHide = currY > prev ? "hide" : "return-btn";
 
-  const timelineContainerStyle = {};
+  const hidden = {  
+    opacity: 0,
+    transition: 'all 1s',
+ }
+ 
+ 
+ 
 
   useEffect(() => {
     const sections = document.querySelectorAll(".me");
@@ -45,12 +52,16 @@ function AboutMe() {
           if (entry.isIntersecting === true) {
             if (entry.target.id === "my_story") {
               setOutline([true, false, false, false]);
+              entry.target.style.opacity = 1
             } else if (entry.target.id === "experience") {
               setOutline([false, true, false, false]);
+              entry.target.style.opacity = 1
             } else if (entry.target.id === "education") {
               setOutline([false, false, true, false]);
+              entry.target.style.opacity = 1
             } else if (entry.target.id === "interest") {
               setOutline([false, false, false, true]);
+              entry.target.style.opacity = 1
             }
           }
         });
@@ -67,7 +78,7 @@ function AboutMe() {
 
   return (
     <div className="abt">
-      <div style={timelineContainerStyle} className="timeLineContainer">
+      <div className="timeLineContainer">
         <Timeline className="timeLine" align="left" position="left">
           <TimelineItem>
             <TimelineSeparator>
@@ -130,7 +141,7 @@ function AboutMe() {
         Back Home
       </button>
 
-      <div id="my_story" className="me">
+      <div style={hidden} id="my_story" className="me">
         <h1> My Story</h1>
         <p>
           TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
@@ -163,7 +174,7 @@ function AboutMe() {
           TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTEST
         </p>
       </div>
-      <div id="experience" className="me">
+      <div style={hidden} id="experience" className="me">
         <h1>Experience</h1>
         <p>
           TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
@@ -206,7 +217,7 @@ function AboutMe() {
           TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTEST
         </p>
       </div>
-      <div id="education" className="me">
+      <div style={hidden} id="education" className="me">
         <h1>Education</h1>
         <p>
           TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
@@ -249,7 +260,7 @@ function AboutMe() {
           TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTEST
         </p>
       </div>
-      <div id="interest" className="me">
+      <div style={hidden} id="interest" className="me">
         <h1>Interest</h1>
         <p>
           TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
@@ -292,6 +303,7 @@ function AboutMe() {
           TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTEST
         </p>
       </div>
+      <div className="test">hello</div>
     </div>
   );
 }

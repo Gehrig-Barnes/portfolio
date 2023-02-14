@@ -9,6 +9,8 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import "../App.css";
 import "../style/about.css";
 
+
+
 function AboutMe() {
   const [currY, setCurrY] = useState(0);
   const [prev, setPrev] = useState(0);
@@ -22,7 +24,7 @@ function AboutMe() {
   });
 
   const toggleHide = currY > prev ? "hide" : "return-btn";
-  
+
   function handleDotOne() {
     setOutline([true, false, false, false]);
   }
@@ -36,13 +38,10 @@ function AboutMe() {
     setOutline([false, false, false, true]);
   }
 
-  const hidden = {  
+  const hidden = {
     opacity: 0,
-    transition: 'all 1s',
- }
- 
- 
- 
+    transition: "all 1s",
+  };
 
   useEffect(() => {
     const sections = document.querySelectorAll(".me");
@@ -52,23 +51,23 @@ function AboutMe() {
           if (entry.isIntersecting === true) {
             if (entry.target.id === "my_story") {
               setOutline([true, false, false, false]);
-              entry.target.style.opacity = 1
+              entry.target.style.opacity = 1;
             } else if (entry.target.id === "experience") {
               setOutline([false, true, false, false]);
-              entry.target.style.opacity = 1
+              entry.target.style.opacity = 1;
             } else if (entry.target.id === "education") {
               setOutline([false, false, true, false]);
-              entry.target.style.opacity = 1
+              entry.target.style.opacity = 1;
             } else if (entry.target.id === "interest") {
               setOutline([false, false, false, true]);
-              entry.target.style.opacity = 1
+              entry.target.style.opacity = 1;
             }
           }
         });
       },
       {
         rootMargin: "0% 0% 0% 10%",
-        threshold: 0.7,
+        threshold: 0.5,
       }
     );
     sections.forEach((section) => {
@@ -117,7 +116,7 @@ function AboutMe() {
               </a>
               <TimelineConnector className="connector" />
             </TimelineSeparator>
-            <TimelineContent>Education</TimelineContent>
+            <TimelineContent>Skills</TimelineContent>
           </TimelineItem>
           <TimelineItem>
             <TimelineSeparator>
@@ -218,47 +217,20 @@ function AboutMe() {
         </p>
       </div>
       <div style={hidden} id="education" className="me">
-        <h1>Education</h1>
-        <p>
-          TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTEST TEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTEST TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTEST
-        </p>
-        <p>
-          TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTEST TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTEST
-        </p>
-        <p>
-          TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTEST TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTEST
-        </p>
-        <p>
-          TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTEST TEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTESTTEST
-          TESTTESTTESTTEST TESTTESTTESTTEST TESTTESTTEST
-        </p>
+        <h1>Skills</h1>
+        <div className="skill-box">
+          <h5>JavaScript</h5>
+          <h5>CSS</h5>
+          <h5>HTML</h5>
+          <h5>React</h5>
+          <h5>Ruby</h5>
+          <h5>Ruby on Rails</h5>
+          <h5>Python</h5>
+          <h5>Flask</h5>
+          <h5>Postgres</h5>
+          <h5>MUI</h5>
+          <h5>Bootstrap</h5>
+        </div>
       </div>
       <div style={hidden} id="interest" className="me">
         <h1>Interest</h1>

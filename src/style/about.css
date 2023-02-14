@@ -7,13 +7,14 @@
 }
 
 .me {
-  margin-bottom: 4%;
+  margin-bottom: 2%;
   margin-left: 30%;
+  
   
 }
 
 #my_story {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .separator {
@@ -28,3 +29,18 @@
     inline-size: 50%; 
 }
 
+/* .skill-box{
+  height: 40vh;
+  width: 30vw;
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
+ 
+  
+} */
+
+/* .logo{
+  position: inherit;
+  width: 5vw ;
+  height: 7vh ;
+  
+} */

@@ -21,6 +21,15 @@ function AboutMe() {
     setCurrY(window.scrollY);
   });
 
+  function transitionDiv() {
+    var myDiv = document.getElementById("myDiv");
+    setTimeout(function() {
+      myDiv.classList.add("transitioned");
+    }, 1000);
+  }
+
+  transitionDiv();
+
   const toggleHide = currY > prev ? "hide" : "return-btn";
 
   function handleDotOne() {
@@ -65,7 +74,7 @@ function AboutMe() {
       },
       {
         rootMargin: "-10% 10% 10% 10%",
-        threshold: .7,
+        threshold: 0.7,
       }
     );
     sections.forEach((section) => {
@@ -140,7 +149,7 @@ function AboutMe() {
 
       <div style={hidden} id="my_story" className="me">
         <h1> About</h1>
-        
+
         <p>
           I am business school graduate and software engineer born on February
           22, 1995. I recently pivoted into software engineering by attending
@@ -158,7 +167,6 @@ function AboutMe() {
           playing chess and find the strategic and analytical aspects of the
           game to be a great mental exercise.
         </p>
-        
       </div>
       <div style={hidden} id="experience" className="me">
         <h1>Experience</h1>
@@ -252,6 +260,7 @@ function AboutMe() {
           </li>
         </ul>
       </div>
+      
     </div>
   );
 }

@@ -3,19 +3,19 @@ const projects = [
       name: "Get Away",
       description: "TEST TESTTESTTESTTESTTEST TEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTEST",
       video: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      image:"https://assets-prd.ignimgs.com/2022/08/17/top25animecharacters-blogroll-1660777571580.jpg",
+      image:"../projectImages/GetAway.png",
     },
     {
         name: "Cloud Watch",
         description: "TEST TESTTESTTESTTESTTEST TEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTEST",
         video: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-        image:"https://assets-prd.ignimgs.com/2022/08/17/top25animecharacters-blogroll-1660777571580.jpg",
+        image:"../projectImages/CloudWatch.png",
       },
       {
         name: "Planters",
         description: "TEST TESTTESTTESTTESTTEST TEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTEST",
         video: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-        image:"https://assets-prd.ignimgs.com/2022/08/17/top25animecharacters-blogroll-1660777571580.jpg",
+        image:"../projectImages/Planters.png",
       },
   ];
 

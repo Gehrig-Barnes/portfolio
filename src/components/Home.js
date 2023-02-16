@@ -27,7 +27,7 @@ function Home() {
             Javascript, React, && Ruby on Rails
           </h6>
           
-          <button onClick={()=> nav('/about_me')} class="aboutClick">About Me</button>
+          <button onClick={()=> nav('/about_me')} class="aboutClick">More About Me ...</button>
         </div>
       </div>
     </div>

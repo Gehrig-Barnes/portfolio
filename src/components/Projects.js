@@ -13,6 +13,7 @@ function Project() {
         description={project.description}
         video = {project.video}
         image = {project.image}
+        git_hub = {project.git_hub}
       />
     );
   });

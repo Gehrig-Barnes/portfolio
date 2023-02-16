@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-export default function ProjectCard({ name, description, video, image }) {
+export default function ProjectCard({ name, description, video, image, git_hub }) {
   return (
     <div className="card">
       <Container>
@@ -17,7 +17,11 @@ export default function ProjectCard({ name, description, video, image }) {
             <div className = "cardDetail">
               <h2 className="cDetail">{name}</h2>
               <p className="cDetail">{description}</p>
-              <a className="cDetail" href={video}>Video Demo</a>
+              
+            
+              {video !== ""? <a className="cDetail" href={video}>Video Demo |</a> : null}
+              <a className="cDetail" href={git_hub}> GitHub</a>
+              
             </div>
           </Col>
         </Row>

@@ -2,20 +2,23 @@ const projects = [
     {
       name: "Get Away",
       description: "TEST TESTTESTTESTTESTTEST TEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTEST",
-      video: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+      video: 'https://www.youtube.com/watch?v=ZpOB-biXSmE',
       image:"../projectImages/GetAway.png",
+      git_hub: "https://github.com/Gehrig-Barnes/Get-Away-FE"
     },
     {
         name: "Cloud Watch",
         description: "TEST TESTTESTTESTTESTTEST TEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTEST",
-        video: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        video: '',
         image:"../projectImages/CloudWatch.png",
+        git_hub: "https://github.com/Gehrig-Barnes/cloud-watch"
       },
       {
         name: "Planters",
         description: "TEST TESTTESTTESTTESTTEST TEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTESTTEST TESTTESTTESTTESTTEST",
-        video: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+        video: '',
         image:"../projectImages/Planters.png",
+        git_hub: "https://github.com/Gehrig-Barnes/plant-project"
       },
   ];
 

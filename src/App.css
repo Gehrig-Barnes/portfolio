@@ -360,11 +360,7 @@ input:checked + .slider:before {
     margin-right: 0%;
   }
 
-  #myName {
-    font-family: "Bubbly", sans-serif;
-    border-bottom: none;
-    padding-right: 0%;
-  }
+  
 
   #titleContainer {
     justify-content: left;

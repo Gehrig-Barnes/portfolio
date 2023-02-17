@@ -1,0 +1,17 @@
+#myNameDark{
+    color: white;
+    font-family: "Bubbly", sans-serif;
+  border-bottom: dotted;
+  padding-right: 2%;
+}
+
+#titleDark{
+    font-family: "Bubbly", sans-serif;
+  border-top: dotted;
+  padding-left: 2%;
+  color: white;
+}
+
+#lineDark {
+    color: white;
+}

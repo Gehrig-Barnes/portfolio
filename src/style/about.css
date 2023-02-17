@@ -14,9 +14,14 @@
   
 }
 
+
+
 .me >h1 {
   border-bottom: solid 2px;
+  
 }
+
+
 
 #my_story {
   margin-top: 5%;
@@ -31,9 +36,6 @@
   height: 150px;
 }
 
-.me > p {
-    ; 
-}
 
 @media (max-width: 1200px) {
   .timeLineContainer{
@@ -55,6 +57,8 @@
     
   }
 
+
+
   .return-btn{
     font-size: small;
   }
@@ -66,19 +70,12 @@
   
 }
 
-/* .skill-box{
-  height: 40vh;
-  width: 30vw;
-  display: grid;
-  grid-template-columns: repeat(5, 2fr);
- 
-  
-} */
+.abtDark{
+  color: white;
+}
 
-/* .logo{
-  position: inherit;
-  width: 5vw ;
-  height: 7vh ;
-  
-} */
+#backBtnDark{
+  color:white
+}
+
 

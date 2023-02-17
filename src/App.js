@@ -13,7 +13,7 @@ function App() {
      <Nav setIsDark={setIsDark} isDark={isDark}/>
      
       <Routes>
-        <Route exact path="/about_me" element={<AboutMe/>}/>
+        <Route exact path="/about_me" element={<AboutMe isDark={isDark}/>}/>
         <Route exact path="/projects" element={<Project/>}/>
         <Route exact path="/" element={<Home isDark={isDark}/>}/>
       </Routes>

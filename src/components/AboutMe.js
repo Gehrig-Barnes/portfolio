@@ -9,12 +9,14 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import "../App.css";
 import "../style/about.css";
 
-function AboutMe() {
+function AboutMe({ isDark }) {
   const [currY, setCurrY] = useState(0);
   const [prev, setPrev] = useState(0);
   const [outlined, setOutline] = useState([true, false, false, false]);
 
   const navigate = useNavigate();
+
+  
 
   window.addEventListener("scroll", () => {
     setPrev(currY);
@@ -23,7 +25,7 @@ function AboutMe() {
 
   function transitionDiv() {
     var myDiv = document.getElementById("myDiv");
-    setTimeout(function() {
+    setTimeout(function () {
       myDiv.classList.add("transitioned");
     }, 1000);
   }
@@ -82,6 +84,9 @@ function AboutMe() {
     });
   }, []);
 
+
+
+
   return (
     <div className="abt">
       <div className="timeLineContainer">
@@ -97,7 +102,7 @@ function AboutMe() {
               </a>
               <TimelineConnector className="connector" />
             </TimelineSeparator>
-            <TimelineContent>About</TimelineContent>
+            <TimelineContent className={isDark ? "timeLineContentDark" : "timeLineContent"}>About</TimelineContent>
           </TimelineItem>
           <TimelineItem>
             <TimelineSeparator>
@@ -110,7 +115,7 @@ function AboutMe() {
               </a>
               <TimelineConnector className="connector" />
             </TimelineSeparator>
-            <TimelineContent>Experience</TimelineContent>
+            <TimelineContent className={isDark ? "timeLineContentDark" : "timeLineContent"}>Experience</TimelineContent>
           </TimelineItem>
           <TimelineItem>
             <TimelineSeparator>
@@ -123,7 +128,7 @@ function AboutMe() {
               </a>
               <TimelineConnector className="connector" />
             </TimelineSeparator>
-            <TimelineContent>Skills</TimelineContent>
+            <TimelineContent className={isDark ? "timeLineContentDark" : "timeLineContent"}>Skills</TimelineContent>
           </TimelineItem>
           <TimelineItem>
             <TimelineSeparator>
@@ -135,22 +140,23 @@ function AboutMe() {
                 />
               </a>
             </TimelineSeparator>
-            <TimelineContent>Education</TimelineContent>
+            <TimelineContent className={isDark ? "timeLineContentDark" : "timeLineContent"}>Education</TimelineContent>
           </TimelineItem>
         </Timeline>
       </div>
       <button
         className={toggleHide}
+        id={isDark ? "backBtnDark" : "backBtn"}
         onClick={() => navigate("/")}
         disabled={currY > prev ? true : false}
       >
         Back Home
       </button>
 
-      <div style={hidden} id="my_story" className="me">
-        <h1> About</h1>
+      <div style={hidden} id="my_story" className="me" >
+        <h1 className ={isDark ? 'abtDark' :'abt'}> About</h1>
 
-        <p>
+        <p  className ={isDark ? 'abtDark' :'abt'}>
           I am business school graduate and software engineer born on February
           22, 1995. I recently pivoted into software engineering by attending
           Flatiron School, a renowned coding bootcamp, in December 2021. Prior
@@ -160,7 +166,7 @@ function AboutMe() {
           development, and I am excited about the opportunities that technology
           can provide to individuals and businesses alike.
         </p>
-        <p>
+        <p  className ={isDark ? 'abtDark' :'abt'}>
           In my free time, I enjoy staying active with hobbies such as chess and
           rock climbing. I have been rock for two years and I enjoys the
           physical and mental challenges that bouldering provides. I also enjoys
@@ -168,99 +174,98 @@ function AboutMe() {
           game to be a great mental exercise.
         </p>
       </div>
-      <div style={hidden} id="experience" className="me">
-        <h1>Experience</h1>
-        <h2>Flatiron School - New York, NY</h2>
-        <h3>Software Engineering Coach - 07/2022 - Present</h3>
+      <div style={hidden} id="experience" className="me" >
+        <h1  className ={isDark ? 'abtDark' :'abt'}>Experience</h1>
+        <h2  className ={isDark ? 'abtDark' :'abt'}>Flatiron School - New York, NY</h2>
+        <h3  className ={isDark ? 'abtDark' :'abt'}>Software Engineering Coach - 07/2022 - Present</h3>
         <ul>
-          <li>
+          <li  className ={isDark ? 'abtDark' :'abt'}>
             Adapted lessons to teach various topics and coding languages such as
             JavaScript, React, and Ruby on Rails.{" "}
-          </li>
-          <li>
+          </li >
+          <li  className ={isDark ? 'abtDark' :'abt'}>
             Cultivated an inclusive classroom environment by fostering
             sensitivity and awareness of different cultural, racial, ethnic,
             religious, and socioeconomic background.{" "}
           </li>
-          <li>
+          <li  className ={isDark ? 'abtDark' :'abt'}>
             Collaborated with team members to design interactive labs and lesson
             plans for the Flatiron curriculum.{" "}
           </li>
-        </ul>
-        <h2>Risk Strategies - Fort Washington, PA</h2>
-        <h3>Assistant Case Manager - 03/2021 - 10/2021</h3>
+        </ul >
+        <h2  className ={isDark ? 'abtDark' :'abt'}>Risk Strategies - Fort Washington, PA</h2>
+        <h3  className ={isDark ? 'abtDark' :'abt'}>Assistant Case Manager - 03/2021 - 10/2021</h3>
         <ul>
-          <li>
+          <li  className ={isDark ? 'abtDark' :'abt'}>
             Designed premium-calculating spreadsheets to support new business
             proposals for prospective clients.{" "}
           </li>
-          <li>
+          <li  className ={isDark ? 'abtDark' :'abt'}>
             Managed database of key client information to support case
             management workflow.{" "}
           </li>
-          <li>
+          <li  className ={isDark ? 'abtDark' :'abt'}>
             Reviewed client applications to ensure accuracy and completeness
             before submitting to designated insurance carriers.{" "}
           </li>
-        </ul>
-        <h2>firstPro - Fort Washington, PA</h2>
-        <h3>
+        </ul >
+        <h2  className ={isDark ? 'abtDark' :'abt'}>firstPro - Fort Washington, PA</h2>
+        <h3  className ={isDark ? 'abtDark' :'abt'}>
           Revenue Operations Specialist for health provider (contract) - 08/2020
           - 01/2021
         </h3>
-        <ul>
-          <li>
+        <ul  className ={isDark ? 'abtDark' :'abt'}>
+          <li  className ={isDark ? 'abtDark' :'abt'}>
             Submitted hundreds of insurance claims per day to insurers across
             the country.{" "}
           </li>
-          <li>Analyzed databases using Excel and VBA.</li>
+          <li  className ={isDark ? 'abtDark' :'abt'}>Analyzed databases using Excel and VBA.</li>
         </ul>
       </div>
-      <div style={hidden} id="education" className="me">
-        <h1>Skills</h1>
+      <div style={hidden} id="education" className="me" >
+        <h1  className ={isDark ? 'abtDark' :'abt'}>Skills</h1>
         <div className="skill-box">
-          <h3> ▣ JavaScript</h3>
-          <h3> ▣ CSS</h3>
-          <h3> ▣ HTML</h3>
-          <h3> ▣ React</h3>
-          <h3> ▣ Ruby</h3>
-          <h3> ▣ Ruby on Rails</h3>
-          <h3> ▣ Python</h3>
-          <h3> ▣ Flask</h3>
-          <h3> ▣ Postgres</h3>
-          <h3> ▣ MUI</h3>
-          <h3> ▣ Bootstrap</h3>
+          <h3  className ={isDark ? 'abtDark' :'abt'}> ▣ JavaScript</h3>
+          <h3  className ={isDark ? 'abtDark' :'abt'}> ▣ CSS</h3>
+          <h3  className ={isDark ? 'abtDark' :'abt'}> ▣ HTML</h3>
+          <h3  className ={isDark ? 'abtDark' :'abt'}> ▣ React</h3>
+          <h3  className ={isDark ? 'abtDark' :'abt'}> ▣ Ruby</h3>
+          <h3  className ={isDark ? 'abtDark' :'abt'}> ▣ Ruby on Rails</h3>
+          <h3  className ={isDark ? 'abtDark' :'abt'}> ▣ Python</h3>
+          <h3  className ={isDark ? 'abtDark' :'abt'}> ▣ Flask</h3>
+          <h3  className ={isDark ? 'abtDark' :'abt'}> ▣ Postgres</h3>
+          <h3 className ={isDark ? 'abtDark' :'abt'} > ▣ MUI</h3>
+          <h3  className ={isDark ? 'abtDark' :'abt'}> ▣ Bootstrap</h3>
         </div>
       </div>
-      <div style={hidden} id="interest" className="me">
-        <h1>Education</h1>
-        <h2>Flatiron School - Chicago, IL</h2>
+      <div style={hidden} id="interest" className="me" >
+        <h1  className ={isDark ? 'abtDark' :'abt'}>Education</h1>
+        <h2  className ={isDark ? 'abtDark' :'abt'}>Flatiron School - Chicago, IL</h2>
         <p>
-          <strong>
+          <strong  className ={isDark ? 'abtDark' :'abt'}>
             Full Stack Web Development, Ruby on Rails and JavaScript program -
             12/2021 - 04/2022
           </strong>
         </p>
-        <h2>Temple University - Philadelphia, PA</h2>
+        <h2  className ={isDark ? 'abtDark' :'abt'}>Temple University - Philadelphia, PA</h2>
         <p>
-          <strong>Degree:</strong> Bachelors of Business Administration -
+          <strong  className ={isDark ? 'abtDark' :'abt'}>Degree:</strong> Bachelors of Business Administration -
           08/2017 - 05/2020
         </p>
         <p>
-          <strong>Major:</strong> Risk Management and Insurance
+          <strong  className ={isDark ? 'abtDark' :'abt'}>Major:</strong> Risk Management and Insurance
         </p>
         <ul>
-          <li>
+          <li  className ={isDark ? 'abtDark' :'abt'}>
             Gamma Iota Sigma Professional Risk Management, Insurance and
             Actuarial Science Fraternity, Fall 2018 - Present
           </li>
-          <li>Community Affairs Committee, Member, Fall 2018</li>
-          <li>
+          <li  className ={isDark ? 'abtDark' :'abt'}>Community Affairs Committee, Member, Fall 2018</li>
+          <li  className ={isDark ? 'abtDark' :'abt'}>
             Temple University Presidential Academic Scholarship, Fall 2017
           </li>
         </ul>
       </div>
-      
     </div>
   );
 }

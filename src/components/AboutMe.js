@@ -250,9 +250,7 @@ function AboutMe({ isDark }) {
         <h2  className ={isDark ? 'abtDark' :'abt'}>Temple University - Philadelphia, PA</h2>
         <p>
           <strong  className ={isDark ? 'abtDark' :'abt'}>Degree:</strong> Bachelors of Business Administration -
-          08/2017 - 05/2020
-        </p>
-        <p>
+          08/2017 - 05/2020f
           <strong  className ={isDark ? 'abtDark' :'abt'}>Major:</strong> Risk Management and Insurance
         </p>
         <ul>

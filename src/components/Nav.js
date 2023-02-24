@@ -59,7 +59,7 @@ function Nav({ setIsDark, isDark }) {
             </Col>
             <Col>
               <label className="switch">
-                <input type="checkbox" onChange={handleDarkMode} />
+                <input checked = {isDark} type="checkbox" onChange={handleDarkMode} />
                 <span className="slider round"></span>
               </label>
             </Col>

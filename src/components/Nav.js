@@ -24,7 +24,7 @@ function Nav({ setIsDark, isDark }) {
           <Row className="navBar">
             <Col className="col">
               <h3
-                onClick={() => navigate("/")}
+                onClick={() => navigate("/portfolio")}
                 className={isDark ? "navText routes" : "routes"}
               >
                 Home

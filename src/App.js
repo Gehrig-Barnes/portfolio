@@ -8,6 +8,11 @@ import Project from "./components/Projects";
 
 function App() {
   const [isDark, setIsDark] = useState(false)
+
+  //TO DO:
+  //Make project pictures wider.
+  //Make the about me button more obvious. 
+  //fix bug with timeline
   return (
     <div className="App" id={isDark ? 'darkMode' : 'lightMode'}>
      <Nav setIsDark={setIsDark} isDark={isDark}/>

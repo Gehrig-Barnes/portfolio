@@ -1,6 +1,6 @@
-import getAway from './projectImages/GetAway.png'
-import cloudWatch from './projectImages/CloudWatch.png'
-import planters from './projectImages/Planters.png'
+import getAway from './images/GetAway.png'
+import cloudWatch from './images/CloudWatch.png'
+import planters from './images/Planters.png'
 
 const projects = [
   {

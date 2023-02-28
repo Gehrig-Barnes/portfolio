@@ -18,7 +18,7 @@ function Nav({ setIsDark, isDark }) {
 
   return (
     <div className="navContainer">
-      {url.includes("/about_me") ? null : (
+      {url.includes("/gh-pages-url/about_me") ? null : (
         <>
           {" "}
           <Row className="navBar">
@@ -32,7 +32,7 @@ function Nav({ setIsDark, isDark }) {
             </Col>
             <Col className="col">
               <h3
-                onClick={() => navigate("/projects")}
+                onClick={() => navigate("/gh-pages-url/projects")}
                 className={isDark ? "navText routes" : "routes"}
               >
                 Projects

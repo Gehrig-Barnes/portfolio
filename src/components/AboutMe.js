@@ -21,14 +21,8 @@ function AboutMe({ isDark }) {
     setCurrY(window.scrollY);
   });
 
-  function transitionDiv() {
-    var myDiv = document.getElementById("myDiv");
-    setTimeout(function () {
-      myDiv.classList.add("transitioned");
-    }, 1000);
-  }
 
-  transitionDiv();
+
 
   const toggleHide = currY > prev ? "hide" : "return-btn";
 

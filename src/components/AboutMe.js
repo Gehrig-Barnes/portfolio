@@ -278,6 +278,7 @@ function AboutMe({ isDark }) {
         <p>
           <strong className={isDark ? "abtDark" : "abt"}>Degree:</strong>{" "}
           Bachelors of Business Administration - 08/2017 - 05/2020f
+          <br/>
           <strong className={isDark ? "abtDark" : "abt"}>Major:</strong> Risk
           Management and Insurance
         </p>

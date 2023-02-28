@@ -63,3 +63,7 @@
 .cDetail{
   font-size: 22px;
 }
+
+.skill-box > h3{
+  padding-bottom: 5%;
+}

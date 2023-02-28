@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React from "react";
+import { Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import githubLight from "../images/github-mark.png";
 import linkedinLight from "../images/icons8-linkedin-2-48.png";
@@ -18,13 +18,13 @@ function Nav({ setIsDark, isDark }) {
 
   return (
     <div className="navContainer">
-      {url.includes("/about_me") ? null : (
+      {url.includes("/http://gehrig-barnes.github.io/portfolio/about_me") ? null : (
         <>
           {" "}
           <Row className="navBar">
             <Col className="col">
               <h3
-                onClick={() => navigate("/portfolio")}
+                onClick={() => navigate("/http://gehrig-barnes.github.io/portfolio")}
                 className={isDark ? "navText routes" : "routes"}
               >
                 Home
@@ -32,7 +32,7 @@ function Nav({ setIsDark, isDark }) {
             </Col>
             <Col className="col">
               <h3
-                onClick={() => navigate("/projects")}
+                onClick={() => navigate("/http://gehrig-barnes.github.io/portfolio/projects")}
                 className={isDark ? "navText routes" : "routes"}
               >
                 Projects
@@ -59,7 +59,7 @@ function Nav({ setIsDark, isDark }) {
             </Col>
             <Col>
               <label className="switch">
-                <input checked = {isDark} type="checkbox" onChange={handleDarkMode} />
+                <input value = {isDark} type="checkbox" onChange={handleDarkMode} />
                 <span className="slider round"></span>
               </label>
             </Col>

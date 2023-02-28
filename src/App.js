@@ -10,7 +10,6 @@ function App() {
   const [isDark, setIsDark] = useState(false)
 
   //TO DO:
-  // Nav bar is not perfect on projects page when in mobile mode. Probably have to give it more padding
  
   //github refresh 404. 
   //Nick Suggest that I add more color/oomf to the favicon. 
@@ -21,7 +20,7 @@ function App() {
       <Routes>
         <Route exact path="/about_me" element={<AboutMe isDark={isDark}/>}/>
         <Route exact path="/projects" element={<Project/>}/>
-        <Route exact path="/portfolio" element={<Home isDark={isDark}/>}/>
+        <Route exact path="/http://gehrig-barnes.github.io/portfolio" element={<Home isDark={isDark}/>}/>
       </Routes>
     </div>
   );

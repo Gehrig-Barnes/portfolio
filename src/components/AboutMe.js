@@ -158,7 +158,7 @@ function AboutMe({ isDark }) {
       <button
         className={toggleHide}
         id={isDark ? "backBtnDark" : "backBtn"}
-        onClick={() => navigate("/portfolio")}
+        onClick={() => navigate("/http://gehrig-barnes.github.io/portfolio/portfolio")}
         disabled={currY > prev ? true : false}
       >
         Back Home

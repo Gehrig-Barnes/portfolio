@@ -28,7 +28,7 @@ function Home({isDark}) {
             Javascript, React, && Ruby on Rails
           </h6>
           
-          <button onClick={()=> nav('/gh-pages-url/about_me')} class="aboutClick">More About Me ...</button>
+          <button onClick={()=> nav('/about_me')} class="aboutClick">More About Me ...</button>
         </div>
       </div>
     </div>

@@ -4,9 +4,9 @@ import planters from './images/Planters.png'
 
 const projects = [
   {
-    name: "Get Away",
+    name: "GetAway",
     description:
-      "Your website is an Airbnb clone, which means it allows users to browse and book accommodations. The website is built using React and utilizes JSON Web Tokens and localStorage to securely store user information. Users can search for available accommodations using the React-Date-Range library, which allows them to select their desired check-in and check-out dates. Additionally, users can rate and comment on their room living experience, providing valuable feedback for other potential guests. Overall, your Airbnb clone website project aims to provide a seamless and user-friendly experience for those seeking temporary lodging.",
+      "GetAway is an Airbnb clone, which means it allows users to browse and book accommodations. The website is built using React and utilizes JSON Web Tokens and localStorage to securely store user information. Users can search for available accommodations using the React-Date-Range library, which allows them to select their desired check-in and check-out dates. Additionally, users can rate and comment on their room living experience, providing valuable feedback for other potential guests. Overall, your Airbnb clone website project aims to provide a seamless and user-friendly experience for those seeking temporary lodging.",
     video: "https://www.youtube.com/watch?v=ZpOB-biXSmE",
     image: getAway,
     git_hub: "https://github.com/Gehrig-Barnes/Get-Away-FE",

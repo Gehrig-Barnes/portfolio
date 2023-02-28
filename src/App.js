@@ -10,9 +10,11 @@ function App() {
   const [isDark, setIsDark] = useState(false)
 
   //TO DO:
-  //Make project pictures wider.
-  //Make the about me button more obvious. 
-  //fix bug with timeline
+  // Nav bar is not perfect on projects page when in mobile mode. Probably have to give it more padding
+  //fix bug with timeline. probably have to give more padding to the skills section
+  //ChatGPT Typos on project page. 
+  //github refresh 404. 
+  //Nick Suggest that I add more color/oomf to the favicon. 
   return (
     <div className="App" id={isDark ? 'darkMode' : 'lightMode'}>
      <Nav setIsDark={setIsDark} isDark={isDark}/>

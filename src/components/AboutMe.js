@@ -6,6 +6,8 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
+
+import {HashLink} from 'react-router-hash-link'
 import "../App.css";
 import "../style/about.css";
 
@@ -82,13 +84,13 @@ function AboutMe({ isDark }) {
         <Timeline className="timeLine" align="left" position="left">
           <TimelineItem>
             <TimelineSeparator>
-              <a href="#my_story" className="anchor">
+              <HashLink to="#my_story" className="anchor">
                 <TimelineDot
                   variant={outlined[0] ? "filled" : "outlined"}
                   className="separator"
                   onClick={handleDotOne}
                 />
-              </a>
+              </HashLink>
               <TimelineConnector className="connector" />
             </TimelineSeparator>
             <TimelineContent
@@ -99,13 +101,13 @@ function AboutMe({ isDark }) {
           </TimelineItem>
           <TimelineItem>
             <TimelineSeparator>
-              <a href="#experience" className="anchor">
+              <HashLink to="#experience" className="anchor">
                 <TimelineDot
                   variant={outlined[1] ? "filled" : "outlined"}
                   className="separator"
                   onClick={handleDotTwo}
                 />
-              </a>
+              </HashLink>
               <TimelineConnector className="connector" />
             </TimelineSeparator>
             <TimelineContent
@@ -116,13 +118,13 @@ function AboutMe({ isDark }) {
           </TimelineItem>
           <TimelineItem>
             <TimelineSeparator>
-              <a href="#education" className="anchor">
+              <HashLink to="#education" className="anchor">
                 <TimelineDot
                   variant={outlined[2] ? "filled" : "outlined"}
                   className="separator"
                   onClick={handleDotThree}
                 />
-              </a>
+              </HashLink>
               <TimelineConnector className="connector" />
             </TimelineSeparator>
             <TimelineContent
@@ -133,13 +135,13 @@ function AboutMe({ isDark }) {
           </TimelineItem>
           <TimelineItem>
             <TimelineSeparator>
-              <a href="#interest" className="anchor">
+              <HashLink to="#interest" className="anchor">
                 <TimelineDot
                   variant={outlined[3] ? "filled" : "outlined"}
                   className="separator"
                   onClick={handleDotFour}
                 />
-              </a>
+              </HashLink>
             </TimelineSeparator>
             <TimelineContent
               className={isDark ? "timeLineContentDark" : "timeLineContent"}

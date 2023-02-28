@@ -47,23 +47,25 @@
 }
 
 @media (max-width: 991px){
+  
   .card {
+    position: inherit;
     background-color: rgb(171, 205, 147) !important;
     justify-content: center;
     height: 100vh;
     width: 100vw;
     border-radius: 0% !important;
+    
+    
   }
 
   .cardDetail {
     margin-right: 0%;
   }
 }
-
+/* 
 .cDetail{
   font-size: 22px;
-}
+} */
 
-.skill-box > h3{
-  padding-bottom: 5%;
-}
+

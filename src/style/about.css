@@ -22,6 +22,9 @@
 }
 
 
+.skill-box > h3{
+  padding-bottom: 5%;
+}
 
 #my_story {
   margin-top: 5%;

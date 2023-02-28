@@ -11,7 +11,7 @@ function App() {
 
   //TO DO:
   // Nav bar is not perfect on projects page when in mobile mode. Probably have to give it more padding
-  //fix bug with timeline. probably have to give more padding to the skills section
+ 
   //github refresh 404. 
   //Nick Suggest that I add more color/oomf to the favicon. 
   return (

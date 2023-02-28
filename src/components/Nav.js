@@ -18,13 +18,13 @@ function Nav({ setIsDark, isDark }) {
 
   return (
     <div className="navContainer">
-      {url.includes("/http://gehrig-barnes.github.io/portfolio/about_me") ? null : (
+      {url.includes("/about_me") ? null : (
         <>
           {" "}
           <Row className="navBar">
             <Col className="col">
               <h3
-                onClick={() => navigate("/http://gehrig-barnes.github.io/portfolio")}
+                onClick={() => navigate("/portfolio")}
                 className={isDark ? "navText routes" : "routes"}
               >
                 Home
@@ -32,7 +32,7 @@ function Nav({ setIsDark, isDark }) {
             </Col>
             <Col className="col">
               <h3
-                onClick={() => navigate("/http://gehrig-barnes.github.io/portfolio/projects")}
+                onClick={() => navigate("/projects")}
                 className={isDark ? "navText routes" : "routes"}
               >
                 Projects

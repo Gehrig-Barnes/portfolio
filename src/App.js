@@ -11,7 +11,6 @@ function App() {
 
   //TO DO:
  
-  //github refresh 404. 
   //Nick Suggest that I add more color/oomf to the favicon. 
   return (
     <div className="App" id={isDark ? 'darkMode' : 'lightMode'}>
@@ -20,7 +19,7 @@ function App() {
       <Routes>
         <Route exact path="/about_me" element={<AboutMe isDark={isDark}/>}/>
         <Route exact path="/projects" element={<Project/>}/>
-        <Route exact path="/http://gehrig-barnes.github.io/portfolio" element={<Home isDark={isDark}/>}/>
+        <Route exact path="/portfolio" element={<Home isDark={isDark}/>}/>
       </Routes>
     </div>
   );
